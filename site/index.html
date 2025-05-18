@@ -3,198 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VR Avatar Project</title>
-    <style>
-        :root {
-            --primary: #6e48aa;
-            --secondary: #9d50bb;
-            --light: #f4f4f4;
-            --dark: #333;
-        }
-        
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: var(--dark);
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: center;
-            background: var(--dark);
-            padding: 0.5rem;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            margin: 0 0.5rem;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-        
-        nav a:hover {
-            background: var(--primary);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        
-        .hero {
-            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.6);
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            padding: 2rem;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .feature-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        footer {
-            background: var(--dark);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
-        }
-        
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .team-member {
-            text-align: center;
-            padding: 1rem;
-            border: 1px solid #eee;
-            border-radius: 8px;
-        }
-        
-        .blog-post {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-    </style>
+    <title>Аватары для метавселенных | Московский Политех</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Проект «Аватары для метавселенных»</h1>
-        <p>Современные 3D-аватары для VR и игровых платформ</p>
-    </header>
-    
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="about.html">О проекте</a>
-        <a href="team.html">Участники</a>
-        <a href="blog.html">Журнал</a>
-        <a href="resources.html">Ресурсы</a>
-    </nav>
-    
-    <div class="hero">
-        <div class="hero-content">
-            <h2>Создайте свой уникальный цифровой образ</h2>
-            <p>Используя технологии искусственного интеллекта и 3D-моделирования</p>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип проекта">
+                <h1>Аватары для метавселенных, VR и игр</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="progress.html">Прогресс</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    
-    <div class="container">
-        <section id="about">
-            <h2>О нашем проекте</h2>
-            <p>Проект разрабатывается в партнерстве с компанией Texel и направлен на создание сервиса для генерации реалистичных 3D-аватаров, совместимых с популярными VR-платформами и игровыми движками.</p>
-            
-            <div class="features">
-                <div class="feature-card">
-                    <h3>AI Генерация</h3>
-                    <p>Использование нейросетей Hunyuan для создания фотореалистичных аватаров из обычных фотографий.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>VR Совместимость</h3>
-                    <p>Экспорт созданных аватаров в VRChat, Roblox, Unreal Engine и другие платформы.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <h3>Образовательная программа</h3>
-                    <p>Обучение участников проекта технологиям VR, AI и основам предпринимательства.</p>
-                </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Создавайте уникальные 3D-аватары с помощью ИИ</h2>
+            <p>Совместимость с VRChat, Roblox, Unreal Engine и другими платформами</p>
+            <a href="about.html" class="btn">Узнать больше</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Персонализация</h3>
+                <p>Создавайте аватары, отражающие ваш уникальный стиль</p>
+            </div>
+            <div class="feature">
+                <h3>Технологии ИИ</h3>
+                <p>Использование нейросетей Hunyuan для реалистичных результатов</p>
+            </div>
+            <div class="feature">
+                <h3>Образование</h3>
+                <p>Обучение технологиям VR и AI для студентов</p>
             </div>
         </section>
-        
-        <section id="team">
-            <h2>Наша команда</h2>
-            <p>Проект реализуется студентами Московского Политеха при поддержке компании Texel.</p>
-            
-            <div class="team-grid">
-                <div class="team-member">
-                    <h3>Колеснин Евгений</h3>
-                    <p>Разработка прототипа</p>
-                </div>
-                <div class="team-member">
-                    <h3>Андрианова Мария</h3>
-                    <p>UI/UX дизайн</p>
-                </div>
-                <div class="team-member">
-                    <h3>Гулов Комрон</h3>
-                    <p>Интеграция с Unreal Engine</p>
-                </div>
+
+        <section class="partners">
+            <h2>Наши партнеры</h2>
+            <div class="partner-logo">
+                <img src="images/texel-logo.png" alt="Texel Graphics">
+                <p>ООО "Тексел" - технологический партнер проекта</p>
             </div>
         </section>
-    </div>
-    
+    </main>
+
     <footer>
-        <p>© 2025 Проект «Аватары для метавселенных». Все права защищены.</p>
-        <p>Партнер проекта: <a href="https://texel.graphics/" style="color: #fff;">Texel Graphics</a></p>
+        <div class="container">
+            <p>© 2025 Проект "Аватары для метавселенных"</p>
+            <p>Московский Политехнический Университет</p>
+        </div>
     </footer>
 </body>
 </html>
